@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoffeeLovers☕</title>
+  </head>
+  <style>
+    body {
+      background-color: #e0b58c;
+    }
+    h1 {
+      text-align: center;
+      color: #b5421e;
+      border: 3px solid #cd7856;
+      font-size: 40px;
+      border-radius: 10px;
+      font-weight: 1px;
+      padding: 20px;
+      line-height: 20px;
+    }
+    h2 {
+      text-align: center;
+      color: #cd7856;
+    }
+    p {
+      text-align: center;
+      color: #b5421e;
+      font-size: 30px;
+    }
+    .learnMore {
+      text-align: center;
+      font-size: 12px;
+      color: #cd7856;
+    }
+    .jojo {
+      color: #cd7856;
+    }
+    button {
+      display: block;
+      margin: auto;
+      background: #e0662e;
+      color: #ffe4b5;
+      font-size: 22px;
+      box-shadow: 20px 20px 20px rgba(rgb(195, 109, 109), green, blue, alpha);
+      transition: all 200ms ease-in-out;
+      border-radius: 10px;
+      border-color: #b5421e;
+    }
+
+    button:hover {
+      opacity: 0.5;
+      cursor: pointer;
+    }
+    .container {
+      max-width: 200px;
+      margin: auto;
+    }
+    .centerImage {
+      display: block;
+      margin: auto;
+    }
+  </style>
+  <body>
+    <div class="Container">
+      <h1>I Love Coffee</h1>
+      <h2>Especially French Blended Coffee</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/000/original/coffeelovers.png?1694652658"
+        alt="French roasted in a mug"
+        class="centerImage"
+        width="500px"
+      />
+      <p>
+        <strong><span style="color: #e0662e">French Roast</span></strong>
+        describes the color of the bean and as its beginnings hail from France,
+        the bean was roasted to a certain color, and therefore, certain flavor
+        profile, that was in keeping with the traditions and taste preferences
+        of the French roasters, roasting the beans.
+      </p>
+      <a
+        href="https://www.perfectbrew.com/blog/what-is-french-roast-coffee/"
+        target="_blank"
+        class="learnMore"
+      >
+        To Learn More Click Me
+        <br />
+      </a>
+      <button id="buyButton">Buy French Blend</button>
+      <p class="end">
+        <em>This Page Was Built By </em>
+        <a
+          href="https://www.linkedin.com/in/joy-barnes"
+          target="_blank"
+          class="jojo"
+        >
+          Joy Barnes
+        </a>
+      </p>
+      <script>
+        function signUp() {
+          let name = prompt("Hello Coffee Lover☕! What Is Your Name?");
+          let email = prompt("What Is Your Email?");
+
+          if (name && email) {
+            alert("Okay " + name + "! Thank You For Buying Coffee☕❤️");
+          } else {
+            alert("Please Try Again❤️");
+          }
+        }
+
+        let buyButton = document.querySelector("#buyButton");
+        buyButton.addEventListener("click", signUp);
+      </script>
+    </div>
+  </body>
+</html>
